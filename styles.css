@@ -1,0 +1,31 @@
+header{
+    margin:0, auto;
+    padding: 15px;
+    height:200px;
+    background-color: gray
+}
+#title{
+    text-align: center;
+    color: whitesmoke;
+}
+#button-div{
+    float: right;
+}
+#input-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#total-monthly{
+    float: right;
+}
