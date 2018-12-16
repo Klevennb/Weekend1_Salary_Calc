@@ -7,17 +7,20 @@ $( document ).ready(function () {
 
 function appendFunction() {
     console.log('in appendFunction');
-    let firstName = $( '#first-name').val();
+    let firstName = $( '#first-name').val();  //takes input values
     let lastName = $('#last-name').val();
     let idNumber = $('#id-number').val();
     let positionTitle = $('#position-title').val();
     let annualSalary = $('#ann-salary').val();
-    $('table').append('<tr> <td>' + firstName + '</td> <td>' + lastName + '</td> <td>' + idNumber + '</td> + <td>' + positionTitle + '</td> + <td>' + annualSalary + '</td></tr>');
-    $('.inputs').val('');
-    annualSalary = annualSalary / 12;
+    $('table').append('<tr> <td>' + firstName + '</td> <td>' + lastName + '</td> <td>' + idNumber + '</td> + <td>' + positionTitle + '</td> + <td>' + annualSalary + '</td></tr>');  //appends to the table
+    $('.inputs').val(''); //emptys inputs
+    annualSalary = annualSalary / 12;  
     console.log(annualSalary);
-    monthlyBudget = monthlyBudget - annualSalary;
+    monthlyBudget = (monthlyBudget - annualSalary).toFixed(2);  //makes it only display 2 decimals
     $('#total-monthly').empty().append('<h3>Total Monthly: $</h3>', monthlyBudget);
+    if (monthlyBudget < 0) {
+        $('#total-monthly').css('color','red');
+    }
 }
 
 let monthlyBudget = 15000;

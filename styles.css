@@ -1,7 +1,7 @@
 header{
     margin:0, auto;
     padding: 15px;
-    height:200px;
+    height:160px;
     background-color: gray
 }
 #title{
@@ -10,11 +10,13 @@ header{
 }
 #button-div{
     float: right;
+
 }
 #input-div{
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    align-items:center;
+    padding: 18px;
 }
 
 td, th {
@@ -27,5 +29,16 @@ table {
   width: 100%;
 }
 #total-monthly{
-    float: right;
+    display: flex;
+    justify-content: center;
+    margin:30px;
+}
+
+input{
+    height: 25px;
+}
+
+button{
+    height: 30px;
+    width: 90px;
 }
