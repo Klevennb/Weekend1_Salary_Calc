@@ -34,7 +34,7 @@ function appendToTable() {
     $('table').empty(); //emptys table
     $('#employee-table').append('<th>First Name</th> <th>Last Name</th> <th>Id Number</th> <th>Title</th> <th>Annual Salary</th>'); //adds table headers
     for (let i = 0; i < employees.length; i++) {
-        $('#employee-table').append('<tr><td>' + employees[i].firstName + '</td><td>' + employees[i].lastName + '</td><td>' + employees[i].idNumber + '</td><td>' + employees[i].title + '</td><td>' + employees[i].annualSal + '</td></tr>') //adds input data
+        $('#employee-table').append('<tr><td>' + employees[i].firstName + '</td><td>' + employees[i].lastName + '</td><td>' + employees[i].idNumber + '</td><td>' + employees[i].title + '</td><td>' + employees[i].annualSal + '</td><td>' + '<button id="delete-button">Delete</button>' + '</td></tr>'); //adds input data
     } //end for loop
     deductFromBudget();
 } //end appendToTable
