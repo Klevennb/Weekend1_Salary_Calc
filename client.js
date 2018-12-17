@@ -10,6 +10,7 @@ class Employee {
 } //end Employee
 let employees = [];
 
+
 $(document).ready(function () {
     console.log('in jquery');
     $('#submit-button').on('click', pushToEmployees);
@@ -28,6 +29,8 @@ function pushToEmployees() {
 } //end pushToEmployees
 
 function appendToTable() {
+    console.log('in appendToTable');
+    
     $('table').empty(); //emptys table
     $('#employee-table').append('<th>First Name</th> <th>Last Name</th> <th>Id Number</th> <th>Title</th> <th>Annual Salary</th>'); //adds table headers
     for (let i = 0; i < employees.length; i++) {
@@ -37,8 +40,15 @@ function appendToTable() {
 } //end appendToTable
 
 function deductFromBudget() {
-
-
+    console.log('in deductFromBudget');
+    let monthlyBudget = 0;
+    for (let i = 0; i < employees.length; i++) {
+        monthlyBudget += employees[i].annualSal/12;
+    }  //end for loop
+    $('#monthly-budget').empty().append('<h2>Monthly Budget: $'+monthlyBudget.toFixed(2)+'</h2>');
+    if (monthlyBudget > 20000) {
+        $('#monthly-budget').css('color', 'red');
+    }
 } // end deductFromBudget
 
 

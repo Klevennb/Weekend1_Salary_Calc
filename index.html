@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <script src="client.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Weekend Project</title>
@@ -21,9 +21,9 @@
             <div id=input-div>
                 <input type="text" placeholder="First Name" id="input-first" />
                 <input type="text" placeholder="Last Name" id="input-last" />
-                <input type="text" placeholder="Id Number" id="input-id" />
+                <input type="number" placeholder="Id Number" id="input-id" />
                 <input type="text" placeholder="Title" id="input-title" />
-                <input type="text" placeholder="Annual Salary" id="input-annual" />
+                <input type="number" placeholder="Annual Salary" id="input-annual" />
             </div>
             <button id="submit-button">Submit</button>
             <div>
@@ -35,7 +35,7 @@
                     <th>Annual Salary</th>
                 </table>
             </div>
-            <h2>Monthly Budget: $15,000</h2>
+            <h2 id="monthly-budget">Monthly Budget: $0</h2>
 
         </div>
     </div>
