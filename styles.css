@@ -1,4 +1,25 @@
 header{
+    background-color: gray;
+    color: white;
+    margin: 0, auto;
+    padding: 15px;
+    height: 140px;
+    text-align: center;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+
+
+
+
+/* header{
     margin:0, auto;
     padding: 15px;
     height:160px;
@@ -41,4 +62,4 @@ input{
 button{
     height: 30px;
     width: 90px;
-}
+} */
