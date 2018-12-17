@@ -14,7 +14,6 @@ let employees = [];
 $(document).ready(function () {
     console.log('in jquery');
     $('#submit-button').on('click', pushToEmployees);
-    $('tr').on('click', '#delete-button', deleteEmployee);
 }); //end .ready
 
 function pushToEmployees() {
@@ -53,7 +52,7 @@ function deductFromBudget() {
     }
 } // end deductFromBudget
 
-function deleteEmployee() {
-    console.log('in delete');
-    console.log(this);
-}
+// function deleteEmployee() {
+//     console.log('in delete');
+//     console.log(this);
+// }
